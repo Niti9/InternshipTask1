@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+input {
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
+
+  border: 1px solid #ddd; /* Initial border color */
+  border-radius: 5px;     /* Rounded corners */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* Hover effect for input */
+input:hover,
+input:focus {
+  border-color: #007bff; /* Hover border color (example: blue) */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hover shadow effect */
+  outline: none; /* Remove default outline on focus */
+}
+input:focus {
+  border-color: #0056b3; /* Slightly darker blue for focus */
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.6); /* More prominent shadow on focus */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  color:black;
+
+  
+}
+
+a:link{
+  text-decoration: none !important;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-color: #007bff; /* Hover border color (example: blue) */
+}
+
+
+
+.card img {
+  width: 100px;
+  height: 100px;
+  /* background: #dddddd; */
+
+}
+
+
+
+.details {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -20%);
+  /* background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); */
+  z-index: 1000;
+  width: 300px;
+  margin-top: 40px;
+}
+
+.detailsPage{
+  background: #fff;
+  border: 0px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.detailsPage:hover {
+  
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-color: #007bff; /* Hover border color (example: blue) */
+}
+.details img {
+  width: 150px;
+  height: 150px;
+}
+
+.close {
+  display: inline-block;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.close:hover {
+  background-color: #c82333;
+}
